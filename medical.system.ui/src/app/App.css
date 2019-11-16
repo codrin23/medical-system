@@ -1,0 +1,9 @@
+.app-content {
+  margin-top: 64px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
