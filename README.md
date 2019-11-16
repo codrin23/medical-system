@@ -1,6 +1,56 @@
 # medical-system
 Distributed Medical System based on school assignment using: Java (Spring Boot), React, RabbitMQ, gRPC
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+Clone the repository from github.com to your workspace folder:
+```
+$ git clone https://github.com/codrin23/medical-system.git
+```
+
+For the Web Client (medical.system.ui):
+
+Navigate to the repository folder:
+```
+$ cd medical.system.ui
+```
+
+Install example dependencies
+```
+$ npm install
+```
+
+Run the server
+```
+$ npm start
+```
+Open [http://localhost:3000/](http://localhost:3000/) page in your browser.
+
+For the Backend Web Server (medical.system):
+
+```
+$ cd medical.system
+$ mvn clean install
+$ mvn spring-boot:run
+```
+
+For sensor.reader module:
+
+```
+$ cd sensor.reader
+$ mvn clean install
+$ mvn spring-boot:run
+```
+
+### Prerequisites
+
+* [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Maven](https://maven.apache.org/download.cgi) (at least 3.5)
+* MySQL
+* npm
+
 ___
 
 The **medical.system** and **medical.system.ui** module consists of an online platform designed to manage patients, caregivers and medication.
@@ -59,8 +109,9 @@ Implementation technologies:
 Changelog:
   * add initial the description of the project
   * add initial documentation of the project
+  * include initial dependencies and how to build and run the project step
 
 TODO:
-  * include dependencies and how to build and run the project step
+  * include dependencies and how to build and run for pillcase.system module
   * include top level architectural UML
   * include in the TODO list code improvements to be made and update changelog with link to the commit for each improvement done
