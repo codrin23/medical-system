@@ -15,15 +15,7 @@ For the Web Client (medical.system.ui):
 Navigate to the repository folder:
 ```
 $ cd medical.system.ui
-```
-
-Install example dependencies
-```
 $ npm install
-```
-
-Run the server
-```
 $ npm start
 ```
 Open [http://localhost:3000/](http://localhost:3000/) page in your browser.
