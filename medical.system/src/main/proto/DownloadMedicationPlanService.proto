@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package CCM.cchira.grpc;
+
+message DownloadMedicationPlanRequest {
+    int32 patientId = 1;
+    string currentDate = 2;
+}
+
+message IntakeInterval {
+    string drugName = 1;
+    string dosage = 2;
+    string startHour = 3;
+    string endHour = 4;
+}
+
+message DownloadMedicationPlanResponse {
+    repeated IntakeInterval intakeIntervals = 1;
+}
+
+service DownloadMedicationPlanService {
+    rpc downloadMedicationPlan(DownloadMedicationPlanRequest) returns (DownloadMedicationPlanResponse);
+}

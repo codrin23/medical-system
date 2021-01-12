@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package CCM.cchira.grpc;
+
+message MedicationNotTakenRequest {
+    int32 patientId = 1;
+    string currentDate = 2;
+    string startHour = 3;
+    string endHour = 4;
+    string drugName = 5;
+}
+
+message MedicationNotTakenResponse {
+    bool success = 1;
+}
+
+service MedicationNotTakenService {
+    rpc medicationNotTaken(MedicationNotTakenRequest) returns (MedicationNotTakenResponse);
+}
